@@ -234,3 +234,14 @@ ul {
 .video__btn:hover path {
     fill: #53a1cb;
 }
+
+.design__interior {
+    display: grid;
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 14px 44px;
+}
+
+.design__cell-one {
+    grid-row: 1/3;
+}
