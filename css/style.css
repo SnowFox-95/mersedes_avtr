@@ -10,7 +10,16 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Corporate-A-Bold.woff2") format("woff2"),
+    url("../fonts/Corporate-A-Bold.woff") format("woff");
+}
+
 body {
+    font-family: 'Roboto Condended', sans-serif;
     background: #070A1B;
     font-weight: 400;
     font-size: 16px;
@@ -70,4 +79,43 @@ ul {
 
 .list__link:hover {
     background-color: #C1A1D2;
+}
+
+.header__content {
+    background-image: url("../images/header-bg.png");
+    min-height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__content::before {
+    content: "";
+    background-image: url("../images/deco_logo.svg");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
+.title {
+    font-family: Corporate-A-Bold;
+    margin-bottom: 5px;
+    font-size: 72px;
+    line-height: 1.2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-desc {
+    font-size: 24px;
+    line-height: 1.2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
 }
