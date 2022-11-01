@@ -33,6 +33,10 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -265,8 +269,12 @@ ul {
     align-items: flex-end;
 }
 
-.design__cell-3 img {
-    margin-top: 160px;
+.design__interior-img {
+    grid-column: 2/-1;
+}
+
+.design__cell-text {
+    margin-bottom: 15px;
 }
 
 .design-slider__item {
@@ -318,4 +326,5 @@ ul {
     max-width: 100%;
     display: block;
     object-fit: cover;
+    margin: 0 auto;
 }

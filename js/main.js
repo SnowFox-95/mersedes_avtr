@@ -5,5 +5,14 @@ $(function () {
         variableWidth: true,
         prevArrow: '<img class="arrow arrow-left" src="images/Arrow_left.svg" alt="">',
         nextArrow: '<img class="arrow arrow-right" src="images/Arrow_right.svg" alt="">',
+        response:[
+            {
+                breakpoint: 361,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
