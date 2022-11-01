@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 html {
     margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Corporate-A-Bold';
+    font-family: "Corporate-A-Bold";
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/Corporate-A-Bold.woff2") format("woff2"),
@@ -20,8 +20,8 @@ html {
 }
 
 body {
-    font-family: 'Roboto Condended', sans-serif;
-    background: #070A1B;
+    font-family: "Roboto Condended", sans-serif;
+    background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -51,6 +51,7 @@ ul {
 }
 
 .header {
+    background: #070a1b;
 }
 
 .header__top {
@@ -79,11 +80,11 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: background .3s;
+    transition: background 0.3s;
 }
 
 .list__link:hover {
-    background-color: #C1A1D2;
+    background-color: #c1a1d2;
 }
 
 .header__content {
@@ -125,6 +126,10 @@ ul {
     margin-bottom: 50px;
 }
 
+.footer {
+    background: #070a1b;
+}
+
 .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -145,10 +150,10 @@ ul {
 .section__title {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: 'Corporate-A-Bold';
+    font-family: "Corporate-A-Bold";
     font-size: 18px;
     line-height: 120%;
-    color: #F402A2;
+    color: #f402a2;
 }
 
 .concept__text {
@@ -182,11 +187,11 @@ ul {
     width: 100%;
     font-size: 18px;
     line-height: 120%;
-    color: #F402A2;
+    color: #f402a2;
     text-align: center;
     padding: 14px;
-    border: 1px solid #F402A2;
-    transition: all .3s;
+    border: 1px solid #f402a2;
+    transition: all 0.3s;
 }
 
 .premier__btn:hover {
@@ -212,10 +217,10 @@ ul {
     width: 100%;
     font-size: 18px;
     line-height: 120%;
-    color: #F402A2;
+    color: #f402a2;
     padding: 14px;
-    border: 1px solid #F402A2;
-    transition: all .3s;
+    border: 1px solid #f402a2;
+    transition: all 0.3s;
 }
 
 .video__btn span {
@@ -228,7 +233,7 @@ ul {
 }
 
 .video__btn path {
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .video__btn:hover path {
@@ -240,6 +245,7 @@ ul {
     grid-template-columns: 255px 255px auto 330px;
     grid-template-rows: auto auto;
     gap: 14px 44px;
+    margin-bottom: 100px;
 }
 
 .design__cell-1 {
@@ -261,4 +267,33 @@ ul {
 
 .design__cell-3 img {
     margin-top: 160px;
+}
+
+.design-slider__item {
+    margin: 0 30px;
+}
+
+.slick-track {
+    margin-left: -30px;
+}
+
+.design-slider {
+    padding-bottom: 25px;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    bottom: 0;
+    left: 50%;
+
+}
+
+.arrow-left {
+    transform: translateX(-80px);
+}
+
+.arrow-right {
+    transform: translateX(30px);
 }
